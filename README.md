@@ -11,7 +11,10 @@
 **The datasets we use is from kaggle website and you can download these files from dataset reference section below. We also upload these dataset on our github repository
 for direct usage.**
 
-**For the visualizations in the method.py, the plotly library will help to present the interactive plot in a web through python-built web applications using Dash. For the non-interactive visualizations, we save the chart in local directory to observe. We also put our code in a jupyter notebook called project_notebook.ipynb which allow people to interact with each chart in an easier and more direct way. We also provide extra testing interactive visualizations through Tableau Software. You can download the [Tableau Desktop](https://www.tableau.com/) to access and interact with our visualizations. If you can not access to Tableau license, we also upload the static screenshots on the Tableau test visualization folder for reference.**
+**For the visualizations in the method.py, the plotly library will help to present the interactive plot in a web through python-built web applications using Dash. For the non-interactive visualizations, we save the chart in local directory to observe. We also put our code in a jupyter notebook called project_notebook.ipynb which allow people to interact with each chart in an easier and more direct way.
+However, our notebook embeded interactive visulizations but Github performs a static render of the juppter notebooks which don't include the embedded HTML/JavaScript that makes up a plotly graph.There are several solutions. The first solution is download the project_notebook.ipynb file and view the file in your local python environment. Another solution is paste the link of our GitHub notebook into <http://nbviewer.jupyter.org/>, which will help to present the whole view of our notebbok directly online.**
+
+**We also provide extra testing interactive visualizations through Tableau Software. You can download the [Tableau Desktop](https://www.tableau.com/) to access and interact with our visualizations. If you can not access to Tableau license, we also upload the static screenshots on the Tableau test visualization folder for reference.**
 
 
 # Dataset Reference/links 📖:
