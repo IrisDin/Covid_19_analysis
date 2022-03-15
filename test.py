@@ -1,17 +1,23 @@
+"""
+Course: CSE163
+Author: Frank Iris
+Project Title: Analysis about COVID-19 Vaccination, Cases, and Deaths Worldwide
+This is a test file that contain seven test functions to test the
+accuracy of visualizations for question1,2,4,5,6 in the method.py file. To test
+the corretness of question 3, we will use Tableau software.
+"""
 import math
 import pandas as pd
-# Course: CSE163
-# Author: Frank Iris
-# Project Title: Covid-19 World Vccination/Caese Analysis
 
 
 def vac_map_test(country_df):
     """
-    Parameter:
+    Test for question 1
+    Argument:
         country_df: a data file that contains the vaccination records
         in the world.
-    Argument:
-        hTe vac_map_test will test the number being shown on the Choropleth map
+
+        The vac_map_test will test the number being shown on the Choropleth map
         with the actual number total vaccinations that in the dataset.
         If they match, it will shown vac_map_test passed, otherwise, it will
         show the error message.
@@ -24,7 +30,7 @@ def vac_map_test(country_df):
     india = country_df[country_df['country'] == 'India']
     actual = india['total_vaccinations'].max()
     # since from the map, it shown the scientific notation, so we pick
-    # the viible digits on the map to compare with the actual number.
+    # the visible digits on the map to compare with the actual number.
     visual_digit = actual // 1000
     on_map = 1776674000 // 1000
     assert visual_digit == on_map
@@ -32,10 +38,11 @@ def vac_map_test(country_df):
 
 def death_map_test(merged):
     '''
-    Parameter:
+    Test for question2
+    Argument:
         merged: a data file that combined the vaccination records
         and COVID case information based on date and country.
-    Argument:
+
         The death_map_test method will test the number being shown on the
         Choropleth map with the actual number of daily_nwe_deaths.
         that in the dataset.
@@ -50,13 +57,57 @@ def death_map_test(merged):
     assert congo['cumulative_total_deaths'].max() == 369
 
 
+def fully_vac_test(country_df):
+    '''
+    Test for question 4
+    Argument:
+        country_df: a data file that contains the vaccination records
+        in the world.
+
+        The fully_vac_test will test wether the top country shown on the
+        fully_vaccinated bar chart is as same as in the dataset.
+         If they match, it will shown fully_vac_test passed, otherwise, it will
+        show the error message.
+    '''
+    fully = country_df.groupby('country').max()
+    max_val = fully['people_fully_vaccinated'].max()
+
+    on_chart = 'China'
+    china_data = country_df[country_df['country'] == on_chart]
+    assert max_val == china_data['people_fully_vaccinated'].max()
+
+
+def fully_vac_per_hun_test(country_df):
+    '''
+    Test for question 4
+    Argument:
+        country_df: a data file that contains the vaccination records
+        in the world.
+
+        The fully_vac_per_hun_test will test wether the top country
+        shown on the fully_vaccinated_per_hundred bar chart is as
+        same as in the dataset. Since we found it is closely relate to
+        the population base of a country.
+        If they match, it will shown fully_vac_per_hun_test passed,
+        otherwise, it will show the error message.
+    '''
+    fully_hun = country_df.groupby('country').max()
+    max_val = fully_hun['people_fully_vaccinated_per_hundred'].max()
+
+    on_chart = 'Gibraltar'
+    gibraltar_data = country_df[country_df['country'] == on_chart]
+    assert max_val == gibraltar_data['people_fully_'
+                                     'vaccinated_per_hundred'].max()
+
+
 def vac_dis_test(vac_type):
     '''
-    Parameter:
-        vac_type: a data file that contains the usage of differnet tyeps
-       of the vaccine in the world.
+    Test for question5
     Argument:
-        The vac_dis_test method will test the percentage of each typs used in
+       vac_type: a data file that contains the usage of differnet types
+       of the vaccine in the world.
+
+        The vac_dis_test method will test the percentage of each type used in
         the world to compare with the actual proportion calculated from the
         dataset.
         If they match, it will shown vac_dis_test passed, otherwise,
@@ -80,58 +131,18 @@ def vac_dis_test(vac_type):
     assert math.isclose(on_chart1, sinovac_percent)
 
 
-def fully_vac_test(country_df):
-    '''
-    Parameter:
-        country_df: a data file that contains the vaccination records
-        in the world.
-    Argument:
-        The fully_vac_test will test wether the top country shown on the
-        fully_vaccinated bar chart is as same as in the dataset.
-         If they match, it will shown fully_vac_test passed, otherwise, it will
-        show the error message.
-    '''
-    fully = country_df.groupby('country').max()
-    max_val = fully['people_fully_vaccinated'].max()
-
-    on_chart = 'China'
-    china_data = country_df[country_df['country'] == on_chart]
-    assert max_val == china_data['people_fully_vaccinated'].max()
-
-
-def fully_vac_per_hun_test(country_df):
-    '''
-    Parameter:
-        country_df: a data file that contains the vaccination records
-        in the world.
-    Argument:
-        The fully_vac_per_hun_test will test wether the top country
-        shown on the fully_vaccinated_per_hundred bar chart is as
-        same as in the dataset. Since we found it is closely relate to
-        the population base of a country.
-        If they match, it will shown fully_vac_per_hun_test passed,
-        otherwise, it will show the error message.
-    '''
-    fully_hun = country_df.groupby('country').max()
-    max_val = fully_hun['people_fully_vaccinated_per_hundred'].max()
-
-    on_chart = 'Gibraltar'
-    gibraltar_data = country_df[country_df['country'] == on_chart]
-    assert max_val == gibraltar_data['people_fully_'
-                                     'vaccinated_per_hundred'].max()
-
-
 def holiday_vac_case_check(country_df, case_track):
     '''
-    Parameter:
+    Test for question 6.1/6.2/6.3
+    Argument:
         country_df: a data file that contains the vaccination records
             in the world.
-        case_track: a data file that contains the usage of differnet tyeps
+        case_track: a data file that contains the usage of differnet types
             of the vaccine in the world.
-    Argument:
+
         The holiday_vac_case_check method will test whether the number being
-        presented on the graoh is same as the real data in the dataset from
-        each file. Sicne the dataset being used to generate (holiday_vac_case
+        presented on the graph is same as the real data in the dataset from
+        each file. Since the dataset being used to generate (holiday_vac_case
         _death_map is the merged version of two dataset.
          If they match, it will shown holiday_vac_case_check passed,
         otherwise, it will show the error message.
@@ -150,15 +161,16 @@ def holiday_vac_case_check(country_df, case_track):
 
 def normal_vac_case_check(country_df, case_track):
     '''
-    Parameter:
+    Test for question 6.4
+    Argument:
         country_df: a data file that contains the vaccination records
             in the world.
-        case_track: a data file that contains the usage of differnet tyeps
+        case_track: a data file that contains the usage of differnet types
             of the vaccine in the world.
-    Argument:
+
         The normal_vac_case_check method will compare whether the number being
-        presented on the graoh is same as the real data in the dataset from
-        each file. Sicne the dataset being used to generate normal_vac_case
+        presented on the graph is same as the real data in the dataset from
+        each file. Since the dataset being used to generate normal_vac_case
         _death_map is from two separate dataset due to the left join we use.
         Thus, in this case, we will create a outer merged dataset to testify
         the accuracy of the number.
