@@ -1,0 +1,2123 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook locale='en_US' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.ExplainData_AuthorControls.true...ExplainData_AuthorControls />
+    <_.fcp.ExplainData_NullValueExplanation.true...ExplainData_NullValueExplanation />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Regional_us' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.discoverpane.desktop.max.width' value='375' />
+    <preference name='ui.discoverpane.desktop.min.width' value='375' />
+    <preference name='ui.discoverpane.public.max.width' value='375' />
+    <preference name='ui.discoverpane.public.min.width' value='375' />
+    <preference name='ui.discoverpane.reader.max.width' value='375' />
+    <preference name='ui.discoverpane.reader.min.width' value='375' />
+    <preference name='ui.discoverpane.stagingWebContentSwitch' value='1' />
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.registrationform.stagingWebContentSwitch' value='1' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='country_vaccinations 4' inline='true' name='federated.0bmjcwo0ltdif50zkpscc0ykxqgi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='country_vaccinations 4' name='textscan.0e1ntjh0ytfu4r1gizx731aa2aun'>
+            <connection class='textscan' directory='Data/csedata' filename='country_vaccinations 4.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='country_vaccinations_by_manufacturer' name='textscan.17eeghv0s80eka10q7ll60zbh7tg'>
+            <connection class='textscan' directory='Data/csedata' filename='country_vaccinations_by_manufacturer.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='worldometer_coronavirus_daily_data' name='textscan.1nwv5fe15epk2q1elglgi1kgrsax'>
+            <connection class='textscan' directory='Data/csedata' filename='worldometer_coronavirus_daily_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0e1ntjh0ytfu4r1gizx731aa2aun' name='country_vaccinations 4.csv' table='[country_vaccinations 4#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='string' name='iso_code' ordinal='1' />
+            <column datatype='date' name='date' ordinal='2' />
+            <column datatype='real' name='total_vaccinations' ordinal='3' />
+            <column datatype='real' name='people_vaccinated' ordinal='4' />
+            <column datatype='real' name='people_fully_vaccinated' ordinal='5' />
+            <column datatype='real' name='daily_vaccinations_raw' ordinal='6' />
+            <column datatype='real' name='daily_vaccinations' ordinal='7' />
+            <column datatype='real' name='total_vaccinations_per_hundred' ordinal='8' />
+            <column datatype='real' name='people_vaccinated_per_hundred' ordinal='9' />
+            <column datatype='real' name='people_fully_vaccinated_per_hundred' ordinal='10' />
+            <column datatype='real' name='daily_vaccinations_per_million' ordinal='11' />
+            <column datatype='string' name='vaccines' ordinal='12' />
+            <column datatype='string' name='source_name' ordinal='13' />
+            <column datatype='string' name='source_website' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0e1ntjh0ytfu4r1gizx731aa2aun' name='country_vaccinations 4.csv' table='[country_vaccinations 4#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='string' name='iso_code' ordinal='1' />
+            <column datatype='date' name='date' ordinal='2' />
+            <column datatype='real' name='total_vaccinations' ordinal='3' />
+            <column datatype='real' name='people_vaccinated' ordinal='4' />
+            <column datatype='real' name='people_fully_vaccinated' ordinal='5' />
+            <column datatype='real' name='daily_vaccinations_raw' ordinal='6' />
+            <column datatype='real' name='daily_vaccinations' ordinal='7' />
+            <column datatype='real' name='total_vaccinations_per_hundred' ordinal='8' />
+            <column datatype='real' name='people_vaccinated_per_hundred' ordinal='9' />
+            <column datatype='real' name='people_fully_vaccinated_per_hundred' ordinal='10' />
+            <column datatype='real' name='daily_vaccinations_per_million' ordinal='11' />
+            <column datatype='string' name='vaccines' ordinal='12' />
+            <column datatype='string' name='source_name' ordinal='13' />
+            <column datatype='string' name='source_website' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;￥&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iso_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[iso_code]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>iso_code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vaccinations</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_vaccinations]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>total_vaccinations</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_vaccinated</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_vaccinated]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>people_vaccinated</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_fully_vaccinated</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_fully_vaccinated]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>people_fully_vaccinated</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_vaccinations_raw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_vaccinations_raw]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>daily_vaccinations_raw</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_vaccinations</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_vaccinations]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>daily_vaccinations</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vaccinations_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_vaccinations_per_hundred]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>total_vaccinations_per_hundred</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_vaccinated_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_vaccinated_per_hundred]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>people_vaccinated_per_hundred</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_fully_vaccinated_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_fully_vaccinated_per_hundred]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>people_fully_vaccinated_per_hundred</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_vaccinations_per_million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_vaccinations_per_million]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>daily_vaccinations_per_million</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vaccines</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[vaccines]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>vaccines</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_name]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>source_name</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_website</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_website]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>source_website</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='country_vaccinations 4.csv' datatype='table' name='[__tableau_internal_object_id__].[country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Daily Vaccinations' datatype='real' name='[daily_vaccinations]' role='measure' type='quantitative' />
+      <column caption='Daily Vaccinations Per Million' datatype='real' name='[daily_vaccinations_per_million]' role='measure' type='quantitative' />
+      <column caption='Daily Vaccinations Raw' datatype='real' name='[daily_vaccinations_raw]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Iso Code' datatype='string' name='[iso_code]' role='dimension' type='nominal' />
+      <column caption='People Fully Vaccinated' datatype='real' name='[people_fully_vaccinated]' role='measure' type='quantitative' />
+      <column caption='People Fully Vaccinated Per Hundred' datatype='real' name='[people_fully_vaccinated_per_hundred]' role='measure' type='quantitative' />
+      <column caption='People Vaccinated' datatype='real' name='[people_vaccinated]' role='measure' type='quantitative' />
+      <column caption='People Vaccinated Per Hundred' datatype='real' name='[people_vaccinated_per_hundred]' role='measure' type='quantitative' />
+      <column caption='Source Name' datatype='string' name='[source_name]' role='dimension' type='nominal' />
+      <column caption='Source Website' datatype='string' name='[source_website]' role='dimension' type='nominal' />
+      <column caption='Total Vaccinations' datatype='real' name='[total_vaccinations]' role='measure' type='quantitative' />
+      <column caption='Total Vaccinations Per Hundred' datatype='real' name='[total_vaccinations_per_hundred]' role='measure' type='quantitative' />
+      <column caption='Vaccines' datatype='string' name='[vaccines]' role='dimension' type='nominal' />
+      <group caption='Action (Country)' hidden='true' name='[Action (Country)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[country]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;China&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='country_vaccinations 4.csv' id='country_vaccinations 4.csv_B94CE5C914C24A92ACBA4B6D48A13C7C'>
+            <properties context=''>
+              <relation connection='textscan.0e1ntjh0ytfu4r1gizx731aa2aun' name='country_vaccinations 4.csv' table='[country_vaccinations 4#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='string' name='country' ordinal='0' />
+                  <column datatype='string' name='iso_code' ordinal='1' />
+                  <column datatype='date' name='date' ordinal='2' />
+                  <column datatype='real' name='total_vaccinations' ordinal='3' />
+                  <column datatype='real' name='people_vaccinated' ordinal='4' />
+                  <column datatype='real' name='people_fully_vaccinated' ordinal='5' />
+                  <column datatype='real' name='daily_vaccinations_raw' ordinal='6' />
+                  <column datatype='real' name='daily_vaccinations' ordinal='7' />
+                  <column datatype='real' name='total_vaccinations_per_hundred' ordinal='8' />
+                  <column datatype='real' name='people_vaccinated_per_hundred' ordinal='9' />
+                  <column datatype='real' name='people_fully_vaccinated_per_hundred' ordinal='10' />
+                  <column datatype='real' name='daily_vaccinations_per_million' ordinal='11' />
+                  <column datatype='string' name='vaccines' ordinal='12' />
+                  <column datatype='string' name='source_name' ordinal='13' />
+                  <column datatype='string' name='source_website' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='worldometer_coronavirus_daily_data' inline='true' name='federated.0xl280t14iwrb51bc6epc0t8bd2k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='worldometer_coronavirus_daily_data' name='textscan.1mjmzrv0jc50qx1aw3sxd01ppimz'>
+            <connection class='textscan' directory='Data/csedata 1' filename='worldometer_coronavirus_daily_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1mjmzrv0jc50qx1aw3sxd01ppimz' name='worldometer_coronavirus_daily_data.csv' table='[worldometer_coronavirus_daily_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='country' ordinal='1' />
+            <column datatype='real' name='cumulative_total_cases' ordinal='2' />
+            <column datatype='real' name='daily_new_cases' ordinal='3' />
+            <column datatype='real' name='active_cases' ordinal='4' />
+            <column datatype='real' name='cumulative_total_deaths' ordinal='5' />
+            <column datatype='real' name='daily_new_deaths' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1mjmzrv0jc50qx1aw3sxd01ppimz' name='worldometer_coronavirus_daily_data.csv' table='[worldometer_coronavirus_daily_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='country' ordinal='1' />
+            <column datatype='real' name='cumulative_total_cases' ordinal='2' />
+            <column datatype='real' name='daily_new_cases' ordinal='3' />
+            <column datatype='real' name='active_cases' ordinal='4' />
+            <column datatype='real' name='cumulative_total_deaths' ordinal='5' />
+            <column datatype='real' name='daily_new_deaths' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_92AF7C836E6C4FC29548C7E7891E1C42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_92AF7C836E6C4FC29548C7E7891E1C42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cumulative_total_cases</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cumulative_total_cases]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>cumulative_total_cases</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_92AF7C836E6C4FC29548C7E7891E1C42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_new_cases</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_new_cases]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>daily_new_cases</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_92AF7C836E6C4FC29548C7E7891E1C42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>active_cases</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[active_cases]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>active_cases</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_92AF7C836E6C4FC29548C7E7891E1C42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cumulative_total_deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cumulative_total_deaths]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>cumulative_total_deaths</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_92AF7C836E6C4FC29548C7E7891E1C42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_new_deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_new_deaths]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>daily_new_deaths</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_92AF7C836E6C4FC29548C7E7891E1C42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='worldometer_coronavirus_daily_data.csv' datatype='table' name='[__tableau_internal_object_id__].[worldometer_coronavirus_daily_data.csv_92AF7C836E6C4FC29548C7E7891E1C42]' role='measure' type='quantitative' />
+      <column caption='Active Cases' datatype='real' name='[active_cases]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Cumulative Total Cases' datatype='real' name='[cumulative_total_cases]' role='measure' type='quantitative' />
+      <column caption='Cumulative Total Deaths' datatype='real' name='[cumulative_total_deaths]' role='measure' type='quantitative' />
+      <column caption='Daily New Cases' datatype='real' name='[daily_new_cases]' role='measure' type='quantitative' />
+      <column caption='Daily New Deaths' datatype='real' name='[daily_new_deaths]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='worldometer_coronavirus_daily_data.csv' id='worldometer_coronavirus_daily_data.csv_92AF7C836E6C4FC29548C7E7891E1C42'>
+            <properties context=''>
+              <relation connection='textscan.1mjmzrv0jc50qx1aw3sxd01ppimz' name='worldometer_coronavirus_daily_data.csv' table='[worldometer_coronavirus_daily_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='string' name='country' ordinal='1' />
+                  <column datatype='real' name='cumulative_total_cases' ordinal='2' />
+                  <column datatype='real' name='daily_new_cases' ordinal='3' />
+                  <column datatype='real' name='active_cases' ordinal='4' />
+                  <column datatype='real' name='cumulative_total_deaths' ordinal='5' />
+                  <column datatype='real' name='daily_new_deaths' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='country_vaccinations_by_manufacturer' inline='true' name='federated.1hzel3014eglzd153k0xg1ciaa1o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='country_vaccinations_by_manufacturer' name='textscan.1otw4ft03qfg1x1fp6fg51y45vls'>
+            <connection class='textscan' directory='Data/csedata 2' filename='country_vaccinations 4.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='country_vaccinations 4' name='textscan.0xqdk6k1m2t9rn15q6cwf0opkske'>
+            <connection class='textscan' directory='Data/csedata 2' filename='country_vaccinations 4.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0xqdk6k1m2t9rn15q6cwf0opkske' name='country_vaccinations 4.csv' table='[country_vaccinations 4#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='string' name='iso_code' ordinal='1' />
+            <column datatype='date' name='date' ordinal='2' />
+            <column datatype='real' name='total_vaccinations' ordinal='3' />
+            <column datatype='real' name='people_vaccinated' ordinal='4' />
+            <column datatype='real' name='people_fully_vaccinated' ordinal='5' />
+            <column datatype='real' name='daily_vaccinations_raw' ordinal='6' />
+            <column datatype='real' name='daily_vaccinations' ordinal='7' />
+            <column datatype='real' name='total_vaccinations_per_hundred' ordinal='8' />
+            <column datatype='real' name='people_vaccinated_per_hundred' ordinal='9' />
+            <column datatype='real' name='people_fully_vaccinated_per_hundred' ordinal='10' />
+            <column datatype='real' name='daily_vaccinations_per_million' ordinal='11' />
+            <column datatype='string' name='vaccines' ordinal='12' />
+            <column datatype='string' name='source_name' ordinal='13' />
+            <column datatype='string' name='source_website' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0xqdk6k1m2t9rn15q6cwf0opkske' name='country_vaccinations 4.csv' table='[country_vaccinations 4#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='country' ordinal='0' />
+              <column datatype='string' name='iso_code' ordinal='1' />
+              <column datatype='date' name='date' ordinal='2' />
+              <column datatype='real' name='total_vaccinations' ordinal='3' />
+              <column datatype='real' name='people_vaccinated' ordinal='4' />
+              <column datatype='real' name='people_fully_vaccinated' ordinal='5' />
+              <column datatype='real' name='daily_vaccinations_raw' ordinal='6' />
+              <column datatype='real' name='daily_vaccinations' ordinal='7' />
+              <column datatype='real' name='total_vaccinations_per_hundred' ordinal='8' />
+              <column datatype='real' name='people_vaccinated_per_hundred' ordinal='9' />
+              <column datatype='real' name='people_fully_vaccinated_per_hundred' ordinal='10' />
+              <column datatype='real' name='daily_vaccinations_per_million' ordinal='11' />
+              <column datatype='string' name='vaccines' ordinal='12' />
+              <column datatype='string' name='source_name' ordinal='13' />
+              <column datatype='string' name='source_website' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0xqdk6k1m2t9rn15q6cwf0opkske' name='worldometer_coronavirus_daily_data.csv' table='[worldometer_coronavirus_daily_data#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='date' ordinal='0' />
+              <column datatype='string' name='country' ordinal='1' />
+              <column datatype='real' name='cumulative_total_cases' ordinal='2' />
+              <column datatype='real' name='daily_new_cases' ordinal='3' />
+              <column datatype='real' name='active_cases' ordinal='4' />
+              <column datatype='real' name='cumulative_total_deaths' ordinal='5' />
+              <column datatype='real' name='daily_new_deaths' ordinal='6' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[active_cases]' value='[worldometer_coronavirus_daily_data.csv].[active_cases]' />
+          <map key='[country (worldometer_coronavirus_daily_data.csv)]' value='[worldometer_coronavirus_daily_data.csv].[country]' />
+          <map key='[country]' value='[country_vaccinations 4.csv].[country]' />
+          <map key='[cumulative_total_cases]' value='[worldometer_coronavirus_daily_data.csv].[cumulative_total_cases]' />
+          <map key='[cumulative_total_deaths]' value='[worldometer_coronavirus_daily_data.csv].[cumulative_total_deaths]' />
+          <map key='[daily_new_cases]' value='[worldometer_coronavirus_daily_data.csv].[daily_new_cases]' />
+          <map key='[daily_new_deaths]' value='[worldometer_coronavirus_daily_data.csv].[daily_new_deaths]' />
+          <map key='[daily_vaccinations]' value='[country_vaccinations 4.csv].[daily_vaccinations]' />
+          <map key='[daily_vaccinations_per_million]' value='[country_vaccinations 4.csv].[daily_vaccinations_per_million]' />
+          <map key='[daily_vaccinations_raw]' value='[country_vaccinations 4.csv].[daily_vaccinations_raw]' />
+          <map key='[date (worldometer_coronavirus_daily_data.csv)]' value='[worldometer_coronavirus_daily_data.csv].[date]' />
+          <map key='[date]' value='[country_vaccinations 4.csv].[date]' />
+          <map key='[iso_code]' value='[country_vaccinations 4.csv].[iso_code]' />
+          <map key='[people_fully_vaccinated]' value='[country_vaccinations 4.csv].[people_fully_vaccinated]' />
+          <map key='[people_fully_vaccinated_per_hundred]' value='[country_vaccinations 4.csv].[people_fully_vaccinated_per_hundred]' />
+          <map key='[people_vaccinated]' value='[country_vaccinations 4.csv].[people_vaccinated]' />
+          <map key='[people_vaccinated_per_hundred]' value='[country_vaccinations 4.csv].[people_vaccinated_per_hundred]' />
+          <map key='[source_name]' value='[country_vaccinations 4.csv].[source_name]' />
+          <map key='[source_website]' value='[country_vaccinations 4.csv].[source_website]' />
+          <map key='[total_vaccinations]' value='[country_vaccinations 4.csv].[total_vaccinations]' />
+          <map key='[total_vaccinations_per_hundred]' value='[country_vaccinations 4.csv].[total_vaccinations_per_hundred]' />
+          <map key='[vaccines]' value='[country_vaccinations 4.csv].[vaccines]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iso_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[iso_code]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>iso_code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vaccinations</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_vaccinations]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>total_vaccinations</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_vaccinated</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_vaccinated]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>people_vaccinated</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_fully_vaccinated</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_fully_vaccinated]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>people_fully_vaccinated</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_vaccinations_raw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_vaccinations_raw]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>daily_vaccinations_raw</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_vaccinations</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_vaccinations]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>daily_vaccinations</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vaccinations_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_vaccinations_per_hundred]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>total_vaccinations_per_hundred</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_vaccinated_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_vaccinated_per_hundred]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>people_vaccinated_per_hundred</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>people_fully_vaccinated_per_hundred</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[people_fully_vaccinated_per_hundred]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>people_fully_vaccinated_per_hundred</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_vaccinations_per_million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_vaccinations_per_million]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>daily_vaccinations_per_million</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vaccines</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[vaccines]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>vaccines</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_name]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>source_name</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_website</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_website]</local-name>
+            <parent-name>[country_vaccinations 4.csv]</parent-name>
+            <remote-alias>source_website</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date (worldometer_coronavirus_daily_data.csv)]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_042005DE9D7247209E41750691DFFA77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country (worldometer_coronavirus_daily_data.csv)]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_042005DE9D7247209E41750691DFFA77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cumulative_total_cases</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cumulative_total_cases]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>cumulative_total_cases</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_042005DE9D7247209E41750691DFFA77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_new_cases</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_new_cases]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>daily_new_cases</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_042005DE9D7247209E41750691DFFA77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>active_cases</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[active_cases]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>active_cases</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_042005DE9D7247209E41750691DFFA77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cumulative_total_deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cumulative_total_deaths]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>cumulative_total_deaths</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_042005DE9D7247209E41750691DFFA77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daily_new_deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[daily_new_deaths]</local-name>
+            <parent-name>[worldometer_coronavirus_daily_data.csv]</parent-name>
+            <remote-alias>daily_new_deaths</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[worldometer_coronavirus_daily_data.csv_042005DE9D7247209E41750691DFFA77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Vaccine (copy)' datatype='string' name='[Vaccine (copy)_200199089004175363]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[vaccine]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='country_vaccinations 4.csv' datatype='table' name='[__tableau_internal_object_id__].[country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='worldometer_coronavirus_daily_data.csv' datatype='table' name='[__tableau_internal_object_id__].[worldometer_coronavirus_daily_data.csv_042005DE9D7247209E41750691DFFA77]' role='measure' type='quantitative' />
+      <column caption='Active Cases' datatype='real' name='[active_cases]' role='measure' type='quantitative' />
+      <column caption='Country (Worldometer Coronavirus Daily Data.Csv)' datatype='string' name='[country (worldometer_coronavirus_daily_data.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Cumulative Total Cases' datatype='real' name='[cumulative_total_cases]' role='measure' type='quantitative' />
+      <column caption='Cumulative Total Deaths' datatype='real' name='[cumulative_total_deaths]' role='measure' type='quantitative' />
+      <column caption='Daily New Cases' datatype='real' name='[daily_new_cases]' role='measure' type='quantitative' />
+      <column caption='Daily New Deaths' datatype='real' name='[daily_new_deaths]' role='measure' type='quantitative' />
+      <column caption='Daily Vaccinations' datatype='real' name='[daily_vaccinations]' role='measure' type='quantitative' />
+      <column caption='Daily Vaccinations Per Million' datatype='real' name='[daily_vaccinations_per_million]' role='measure' type='quantitative' />
+      <column caption='Daily Vaccinations Raw' datatype='real' name='[daily_vaccinations_raw]' role='measure' type='quantitative' />
+      <column caption='Date (Worldometer Coronavirus Daily Data.Csv)' datatype='date' name='[date (worldometer_coronavirus_daily_data.csv)]' role='dimension' type='ordinal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Iso Code' datatype='string' name='[iso_code]' role='dimension' type='nominal' />
+      <column caption='People Fully Vaccinated' datatype='real' name='[people_fully_vaccinated]' role='measure' type='quantitative' />
+      <column caption='People Fully Vaccinated Per Hundred' datatype='real' name='[people_fully_vaccinated_per_hundred]' role='measure' type='quantitative' />
+      <column caption='People Vaccinated' datatype='real' name='[people_vaccinated]' role='measure' type='quantitative' />
+      <column caption='People Vaccinated Per Hundred' datatype='real' name='[people_vaccinated_per_hundred]' role='measure' type='quantitative' />
+      <column caption='Source Name' datatype='string' name='[source_name]' role='dimension' type='nominal' />
+      <column caption='Source Website' datatype='string' name='[source_website]' role='dimension' type='nominal' />
+      <column caption='Total Vaccinations' datatype='real' name='[total_vaccinations]' role='measure' type='quantitative' />
+      <column caption='Total Vaccinations Per Hundred' datatype='real' name='[total_vaccinations_per_hundred]' role='measure' type='quantitative' />
+      <column caption='Vaccine' datatype='string' name='[vaccine]' role='dimension' type='nominal' />
+      <column caption='Vaccines' datatype='string' name='[vaccines]' role='dimension' type='nominal' />
+      <group caption='Action (Country)' hidden='true' name='[Action (Country)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[country]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-hidden-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;China&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='country_vaccinations 4.csv' id='country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5'>
+            <properties context=''>
+              <relation connection='textscan.0xqdk6k1m2t9rn15q6cwf0opkske' name='country_vaccinations 4.csv' table='[country_vaccinations 4#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='country' ordinal='0' />
+                  <column datatype='string' name='iso_code' ordinal='1' />
+                  <column datatype='date' name='date' ordinal='2' />
+                  <column datatype='real' name='total_vaccinations' ordinal='3' />
+                  <column datatype='real' name='people_vaccinated' ordinal='4' />
+                  <column datatype='real' name='people_fully_vaccinated' ordinal='5' />
+                  <column datatype='real' name='daily_vaccinations_raw' ordinal='6' />
+                  <column datatype='real' name='daily_vaccinations' ordinal='7' />
+                  <column datatype='real' name='total_vaccinations_per_hundred' ordinal='8' />
+                  <column datatype='real' name='people_vaccinated_per_hundred' ordinal='9' />
+                  <column datatype='real' name='people_fully_vaccinated_per_hundred' ordinal='10' />
+                  <column datatype='real' name='daily_vaccinations_per_million' ordinal='11' />
+                  <column datatype='string' name='vaccines' ordinal='12' />
+                  <column datatype='string' name='source_name' ordinal='13' />
+                  <column datatype='string' name='source_website' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='worldometer_coronavirus_daily_data.csv' id='worldometer_coronavirus_daily_data.csv_042005DE9D7247209E41750691DFFA77'>
+            <properties context=''>
+              <relation connection='textscan.0xqdk6k1m2t9rn15q6cwf0opkske' name='worldometer_coronavirus_daily_data.csv' table='[worldometer_coronavirus_daily_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='string' name='country' ordinal='1' />
+                  <column datatype='real' name='cumulative_total_cases' ordinal='2' />
+                  <column datatype='real' name='daily_new_cases' ordinal='3' />
+                  <column datatype='real' name='active_cases' ordinal='4' />
+                  <column datatype='real' name='cumulative_total_deaths' ordinal='5' />
+                  <column datatype='real' name='daily_new_deaths' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[country]' />
+                <expression op='[country (worldometer_coronavirus_daily_data.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[date]' />
+                <expression op='[date (worldometer_coronavirus_daily_data.csv)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='country_vaccinations 4.csv_D690C72DBC2745E1BEE03F1435B882B5' />
+            <second-end-point object-id='worldometer_coronavirus_daily_data.csv_042005DE9D7247209E41750691DFFA77' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='country_vaccinations_by_manufacturer (2)' inline='true' name='federated.1v5c2ea1wrhvja1dwhthb1nnpiz1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='country_vaccinations_by_manufacturer' name='textscan.0r7gdu11cmngw41bjanr00qpb8ui'>
+            <connection class='textscan' directory='Data/csedata 2' filename='country_vaccinations_by_manufacturer.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0r7gdu11cmngw41bjanr00qpb8ui' name='country_vaccinations_by_manufacturer.csv' table='[country_vaccinations_by_manufacturer#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='location' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='string' name='vaccine' ordinal='2' />
+            <column datatype='integer' name='total_vaccinations' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0r7gdu11cmngw41bjanr00qpb8ui' name='country_vaccinations_by_manufacturer.csv' table='[country_vaccinations_by_manufacturer#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='location' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='string' name='vaccine' ordinal='2' />
+            <column datatype='integer' name='total_vaccinations' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[country_vaccinations_by_manufacturer.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[country_vaccinations_by_manufacturer.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations_by_manufacturer.csv_44C51DF1154348E992075101079BD730]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[country_vaccinations_by_manufacturer.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations_by_manufacturer.csv_44C51DF1154348E992075101079BD730]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vaccine</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[vaccine]</local-name>
+            <parent-name>[country_vaccinations_by_manufacturer.csv]</parent-name>
+            <remote-alias>vaccine</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations_by_manufacturer.csv_44C51DF1154348E992075101079BD730]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_vaccinations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_vaccinations]</local-name>
+            <parent-name>[country_vaccinations_by_manufacturer.csv]</parent-name>
+            <remote-alias>total_vaccinations</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[country_vaccinations_by_manufacturer.csv_44C51DF1154348E992075101079BD730]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='country_vaccinations_by_manufacturer.csv' datatype='table' name='[__tableau_internal_object_id__].[country_vaccinations_by_manufacturer.csv_44C51DF1154348E992075101079BD730]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Total Vaccinations' datatype='integer' name='[total_vaccinations]' role='measure' type='quantitative' />
+      <column caption='Vaccine' datatype='string' name='[vaccine]' role='dimension' type='nominal' />
+      <column-instance column='[vaccine]' derivation='None' name='[none:vaccine:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:vaccine:nk]' palette='tableau-20' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;CanSino&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;Novavax&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;Sinovac&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;Oxford/AstraZeneca&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;Covaxin&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;Sputnik V&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;Pfizer/BioNTech&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;Johnson&amp;Johnson&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;Sinopharm/Beijing&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;Moderna&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='country_vaccinations_by_manufacturer.csv' id='country_vaccinations_by_manufacturer.csv_44C51DF1154348E992075101079BD730'>
+            <properties context=''>
+              <relation connection='textscan.0r7gdu11cmngw41bjanr00qpb8ui' name='country_vaccinations_by_manufacturer.csv' table='[country_vaccinations_by_manufacturer#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='location' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='string' name='vaccine' ordinal='2' />
+                  <column datatype='integer' name='total_vaccinations' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='View Satellite Image' name='[Action14]'>
+      <source datasource='test [Tracks] Connection' type='datasource' />
+      <link caption='View Satellite Image' expression='http://maps.google.com/maps?q=&lt;[Lat (deg)]&gt;,&lt;[Long (deg)]&gt;(&lt;[Storm Name]&gt;)&amp;t=k&amp;z=6' />
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action2_57A8017AD20342EEB6DFB4D680A6FA8E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Overall Dashboard for the testing visulization ' type='sheet' worksheet='Test vac_world_map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Overall Dashboard for the testing visulization ' />
+      </command>
+    </action>
+    <action caption='Highlight 1 (generated)' name='[Action3_C5089D3769D840B7BC1955C805331802]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Test world_vac_distri' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Vaccine' />
+        <param name='target' value='Test world_vac_distri' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Test covid_death_map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_vaccinations_by_manufacturer' name='federated.1hzel3014eglzd153k0xg1ciaa1o' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1hzel3014eglzd153k0xg1ciaa1o'>
+            <column caption='Country (Worldometer Coronavirus Daily Data.Csv)' datatype='string' name='[country (worldometer_coronavirus_daily_data.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Cumulative Total Deaths' datatype='real' name='[cumulative_total_deaths]' role='measure' type='quantitative' />
+            <column-instance column='[cumulative_total_deaths]' derivation='Max' name='[max:cumulative_total_deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[country (worldometer_coronavirus_daily_data.csv)]' derivation='None' name='[none:country (worldometer_coronavirus_daily_data.csv):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hzel3014eglzd153k0xg1ciaa1o].[Action (Country)]'>
+            <groupfilter function='level-members' level='[country]' user:ui-action-filter='[Action2_57A8017AD20342EEB6DFB4D680A6FA8E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1hzel3014eglzd153k0xg1ciaa1o].[none:country (worldometer_coronavirus_daily_data.csv):nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:country (worldometer_coronavirus_daily_data.csv):nk]' />
+              <groupfilter function='member' level='[none:country (worldometer_coronavirus_daily_data.csv):nk]' member='&quot;Democratic Republic Of The Congo&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1hzel3014eglzd153k0xg1ciaa1o].[Action (Country)]</column>
+            <column>[federated.1hzel3014eglzd153k0xg1ciaa1o].[none:country (worldometer_coronavirus_daily_data.csv):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1hzel3014eglzd153k0xg1ciaa1o].[Longitude (generated)]' field-type='quantitative' max='27774652.376460895' min='-28605741.051042531' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1hzel3014eglzd153k0xg1ciaa1o].[Latitude (generated)]' field-type='quantitative' max='15307814.989093255' min='-4925895.6563390093' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1hzel3014eglzd153k0xg1ciaa1o].[max:cumulative_total_deaths:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#cd4b4b</color>
+                <color>#ce5757</color>
+                <color>#cf6363</color>
+                <color>#d07070</color>
+                <color>#d17c7c</color>
+                <color>#d28989</color>
+                <color>#d39696</color>
+                <color>#d4a3a3</color>
+                <color>#d5b0b0</color>
+                <color>#d6bebe</color>
+                <color>#d7cbcb</color>
+                <color>#d9d9d9</color>
+                <color>#d2bfd0</color>
+                <color>#cca7c7</color>
+                <color>#c690bf</color>
+                <color>#c07ab7</color>
+                <color>#ba65af</color>
+                <color>#b452a7</color>
+                <color>#ae3f9f</color>
+                <color>#a82d97</color>
+                <color>#a21d90</color>
+                <color>#9c0e89</color>
+                <color>#960082</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1hzel3014eglzd153k0xg1ciaa1o].[max:cumulative_total_deaths:qk]' />
+              <lod column='[federated.1hzel3014eglzd153k0xg1ciaa1o].[none:country (worldometer_coronavirus_daily_data.csv):nk]' />
+              <geometry column='[federated.1hzel3014eglzd153k0xg1ciaa1o].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1hzel3014eglzd153k0xg1ciaa1o].[Latitude (generated)]</rows>
+        <cols>[federated.1hzel3014eglzd153k0xg1ciaa1o].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{F82A6BB2-CBC4-4797-994D-44E306B23D29}' />
+    </worksheet>
+    <worksheet name='Test full_vac_per_hun'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_vaccinations 4' name='federated.0bmjcwo0ltdif50zkpscc0ykxqgi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bmjcwo0ltdif50zkpscc0ykxqgi'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[people_fully_vaccinated_per_hundred]' derivation='Max' name='[max:people_fully_vaccinated_per_hundred:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='People Fully Vaccinated Per Hundred' datatype='real' name='[people_fully_vaccinated_per_hundred]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[Action (Country)]'>
+            <groupfilter function='level-members' level='[country]' user:ui-action-filter='[Action2_57A8017AD20342EEB6DFB4D680A6FA8E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[max:people_fully_vaccinated_per_hundred:qk]' included-values='non-null' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[max:people_fully_vaccinated_per_hundred:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[Action (Country)]</column>
+            <column>[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[max:people_fully_vaccinated_per_hundred:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[none:country:nk]</rows>
+        <cols>[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[max:people_fully_vaccinated_per_hundred:qk]</cols>
+      </table>
+      <simple-id uuid='{3FD6F955-020A-49B2-80D0-44A94605087B}' />
+    </worksheet>
+    <worksheet name='Test fully_vac_compare'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Test fully_vac_compare</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_vaccinations 4' name='federated.0bmjcwo0ltdif50zkpscc0ykxqgi' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0bmjcwo0ltdif50zkpscc0ykxqgi'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[people_fully_vaccinated]' derivation='Max' name='[max:people_fully_vaccinated:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='People Fully Vaccinated' datatype='real' name='[people_fully_vaccinated]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[Action (Country)]'>
+            <groupfilter function='level-members' level='[country]' user:ui-action-filter='[Action2_57A8017AD20342EEB6DFB4D680A6FA8E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[max:people_fully_vaccinated:qk]' included-values='non-null' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[none:country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[max:people_fully_vaccinated:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[max:people_fully_vaccinated:qk]</column>
+            <column>[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[Action (Country)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#499894' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[none:country:nk]</rows>
+        <cols>[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[max:people_fully_vaccinated:qk]</cols>
+      </table>
+      <simple-id uuid='{28E3D60F-BEEB-472C-B251-279CC110FD8C}' />
+    </worksheet>
+    <worksheet name='Test scatter_death_vac'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_vaccinations_by_manufacturer' name='federated.1hzel3014eglzd153k0xg1ciaa1o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hzel3014eglzd153k0xg1ciaa1o'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Daily New Deaths' datatype='real' name='[daily_new_deaths]' role='measure' type='quantitative' />
+            <column caption='Daily Vaccinations' datatype='real' name='[daily_vaccinations]' role='measure' type='quantitative' />
+            <column-instance column='[daily_new_deaths]' derivation='None' name='[none:daily_new_deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[daily_vaccinations]' derivation='None' name='[none:daily_vaccinations:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[people_fully_vaccinated]' derivation='None' name='[none:people_fully_vaccinated:qk]' pivot='key' type='quantitative' />
+            <column caption='People Fully Vaccinated' datatype='real' name='[people_fully_vaccinated]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hzel3014eglzd153k0xg1ciaa1o].[Action (Country)]'>
+            <groupfilter function='level-members' level='[country]' user:ui-action-filter='[Action2_57A8017AD20342EEB6DFB4D680A6FA8E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1hzel3014eglzd153k0xg1ciaa1o].[none:daily_new_deaths:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1hzel3014eglzd153k0xg1ciaa1o].[none:daily_vaccinations:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1hzel3014eglzd153k0xg1ciaa1o].[none:people_fully_vaccinated:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1hzel3014eglzd153k0xg1ciaa1o].[none:people_fully_vaccinated:qk]</column>
+            <column>[federated.1hzel3014eglzd153k0xg1ciaa1o].[none:daily_new_deaths:qk]</column>
+            <column>[federated.1hzel3014eglzd153k0xg1ciaa1o].[none:daily_vaccinations:qk]</column>
+            <column>[federated.1hzel3014eglzd153k0xg1ciaa1o].[Action (Country)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1hzel3014eglzd153k0xg1ciaa1o].[none:daily_new_deaths:qk]' value='57' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='910' />
+                <format attr='maxwidth' value='910' />
+                <format attr='minheight' value='354' />
+                <format attr='maxheight' value='354' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1hzel3014eglzd153k0xg1ciaa1o].[none:daily_vaccinations:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='910' />
+                <format attr='maxwidth' value='910' />
+                <format attr='minheight' value='354' />
+                <format attr='maxheight' value='354' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1hzel3014eglzd153k0xg1ciaa1o].[none:people_fully_vaccinated:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='910' />
+                <format attr='maxwidth' value='910' />
+                <format attr='minheight' value='354' />
+                <format attr='maxheight' value='354' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hzel3014eglzd153k0xg1ciaa1o].[none:daily_new_deaths:qk]</rows>
+        <cols>([federated.1hzel3014eglzd153k0xg1ciaa1o].[none:daily_vaccinations:qk] + [federated.1hzel3014eglzd153k0xg1ciaa1o].[none:people_fully_vaccinated:qk])</cols>
+      </table>
+      <simple-id uuid='{9D404F94-119F-4AFE-8C08-9ADFF4323A91}' />
+    </worksheet>
+    <worksheet name='Test vac_world_map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Test vac_world_map</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_vaccinations 4' name='federated.0bmjcwo0ltdif50zkpscc0ykxqgi' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0bmjcwo0ltdif50zkpscc0ykxqgi'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[total_vaccinations]' derivation='Max' name='[max:total_vaccinations:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Total Vaccinations' datatype='real' name='[total_vaccinations]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[Latitude (generated)]</column>
+            <column>[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[Longitude (generated)]' field-type='quantitative' max='37177855.966837868' min='-16955750.392526962' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[Latitude (generated)]' field-type='quantitative' max='10864510.73413891' min='-10864510.73413891' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='66' />
+            <format attr='cell-h' value='22' />
+            <format attr='cell' value='22' />
+            <format attr='cell-q' value='110' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[max:total_vaccinations:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#d54b50</color>
+                <color>#d56266</color>
+                <color>#d6797d</color>
+                <color>#d79193</color>
+                <color>#d7a9aa</color>
+                <color>#d8c0c1</color>
+                <color>#d9d9d9</color>
+                <color>#c1abcd</color>
+                <color>#ac81c2</color>
+                <color>#975bb7</color>
+                <color>#8439ab</color>
+                <color>#721aa0</color>
+                <color>#620095</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[none:country:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[none:country:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[none:country:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[none:country:nk]' />
+              <color column='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[max:total_vaccinations:qk]' />
+              <geometry column='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[Latitude (generated)]</rows>
+        <cols>[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{B173E8C5-8582-4680-8D5B-0CE26D3891AD}' />
+    </worksheet>
+    <worksheet name='Test world_vac_distri'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_vaccinations_by_manufacturer (2)' name='federated.1v5c2ea1wrhvja1dwhthb1nnpiz1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v5c2ea1wrhvja1dwhthb1nnpiz1'>
+            <column-instance column='[vaccine]' derivation='None' name='[none:vaccine:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_vaccinations]' derivation='Sum' name='[pcto:sum:total_vaccinations:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[total_vaccinations]' derivation='Sum' name='[sum:total_vaccinations:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Vaccinations' datatype='integer' name='[total_vaccinations]' role='measure' type='quantitative' />
+            <column caption='Vaccine' datatype='string' name='[vaccine]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='336' />
+            <format attr='cell-h' value='336' />
+            <format attr='cell' value='42' />
+            <format attr='cell-q' value='210' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1v5c2ea1wrhvja1dwhthb1nnpiz1].[none:vaccine:nk]' />
+              <wedge-size column='[federated.1v5c2ea1wrhvja1dwhthb1nnpiz1].[pcto:sum:total_vaccinations:qk]' />
+              <size column='[federated.1v5c2ea1wrhvja1dwhthb1nnpiz1].[sum:total_vaccinations:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{22F2E3D5-C7DE-43F7-B8B1-EB8EFAB208FD}' />
+    </worksheet>
+    <worksheet name='Test world_vac_distri_extra'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='country_vaccinations_by_manufacturer (2)' name='federated.1v5c2ea1wrhvja1dwhthb1nnpiz1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v5c2ea1wrhvja1dwhthb1nnpiz1'>
+            <column-instance column='[vaccine]' derivation='None' name='[none:vaccine:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_vaccinations]' derivation='Sum' name='[sum:total_vaccinations:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Vaccinations' datatype='integer' name='[total_vaccinations]' role='measure' type='quantitative' />
+            <column caption='Vaccine' datatype='string' name='[vaccine]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1v5c2ea1wrhvja1dwhthb1nnpiz1].[none:vaccine:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1v5c2ea1wrhvja1dwhthb1nnpiz1].[sum:total_vaccinations:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1v5c2ea1wrhvja1dwhthb1nnpiz1].[none:vaccine:nk]</rows>
+        <cols>[federated.1v5c2ea1wrhvja1dwhthb1nnpiz1].[sum:total_vaccinations:qk]</cols>
+      </table>
+      <simple-id uuid='{D5F34398-F8EF-450A-BBED-F5B8573A7D6F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Overall Dashboard for the testing visulization '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='850' maxwidth='1300' minheight='850' minwidth='1300' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98118' id='26' param='vert' type-v2='layout-flow' w='98770' x='615' y='941'>
+            <zone h='4823' id='27' type-v2='title' w='98770' x='615' y='941'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93295' id='7' param='horz' type-v2='layout-flow' w='98770' x='615' y='5764'>
+              <zone h='93295' id='5' type-v2='layout-basic' w='44770' x='615' y='5764'>
+                <zone h='33198' id='3' name='Test vac_world_map' w='44770' x='615' y='5764'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='32369' id='9' name='Test fully_vac_compare' w='44770' x='615' y='66690'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='27728' id='17' name='Test full_vac_per_hun' w='44770' x='615' y='38962'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='702' h='93295' id='21' is-fixed='true' type-v2='layout-basic' w='54000' x='45385' y='5764'>
+                <zone h='62419' id='6' param='vert' type-v2='layout-flow' w='54000' x='45385' y='5764'>
+                  <zone h='26798' id='14' name='Test covid_death_map' w='54000' x='45385' y='5764'>
+                    <layout-cache minheight='244' minwidth='202' type-h='scalable' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='67' h='8823' id='15' is-fixed='true' name='Test covid_death_map' pane-specification-id='0' param='[federated.1hzel3014eglzd153k0xg1ciaa1o].[max:cumulative_total_deaths:qk]' type-v2='color' w='54000' x='45385' y='32562'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='26798' id='13' name='Test scatter_death_vac' w='54000' x='45385' y='41385'>
+                    <layout-cache has-max-size-h='true' has-max-size-w='true' maxheight='453' maxwidth='1874' minheight='453' minwidth='1874' type-h='scalable' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='30876' id='22' param='vert' type-v2='layout-flow' w='54000' x='45385' y='68183'>
+                  <zone fixed-size='197' h='22523' id='18' is-fixed='true' name='Test world_vac_distri' w='54000' x='45385' y='68183'>
+                    <layout-cache fixed-size-w='353' type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='63' h='8353' id='20' is-fixed='true' name='Test world_vac_distri' pane-specification-id='0' param='[federated.1v5c2ea1wrhvja1dwhthb1nnpiz1].[none:vaccine:nk]' type-v2='color' w='54000' x='45385' y='90706'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontname='Tableau Bold'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='83' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98118' id='82' param='vert' type-v2='layout-flow' w='98770' x='615' y='941'>
+                <zone h='4823' id='27' type-v2='title' w='98770' x='615' y='941'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='274' h='33198' id='3' is-fixed='true' name='Test vac_world_map' w='44770' x='615' y='5764'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='220' h='26798' id='14' is-fixed='true' name='Test covid_death_map' w='54000' x='45385' y='5764'>
+                  <layout-cache minheight='244' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='67' h='8823' id='15' name='Test covid_death_map' pane-specification-id='0' param='[federated.1hzel3014eglzd153k0xg1ciaa1o].[max:cumulative_total_deaths:qk]' type-v2='color' w='54000' x='45385' y='32562'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='228' h='27728' id='17' is-fixed='true' name='Test full_vac_per_hun' w='44770' x='615' y='38962'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='220' h='26798' id='13' is-fixed='true' name='Test scatter_death_vac' w='54000' x='45385' y='41385'>
+                  <layout-cache has-max-size-h='true' has-max-size-w='true' maxheight='453' maxwidth='1874' minheight='453' minwidth='1874' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='267' h='32369' id='9' is-fixed='true' name='Test fully_vac_compare' w='44770' x='615' y='66690'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='183' h='22523' id='18' is-fixed='true' name='Test world_vac_distri' w='54000' x='45385' y='68183'>
+                  <layout-cache fixed-size-w='353' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='63' h='8353' id='20' name='Test world_vac_distri' pane-specification-id='0' param='[federated.1v5c2ea1wrhvja1dwhthb1nnpiz1].[none:vaccine:nk]' type-v2='color' w='54000' x='45385' y='90706'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C8A1144D-FC32-4F6F-AD01-4175D5A4625D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='93'>
+    <window class='worksheet' maximized='true' name='Test vac_world_map'>
+      <cards>
+        <edge name='left'>
+          <strip size='225'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bmjcwo0ltdif50zkpscc0ykxqgi].[max:total_vaccinations:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8E89CB42-2481-43A4-AF74-6172256DE928}' />
+    </window>
+    <window class='worksheet' name='Test covid_death_map'>
+      <cards>
+        <edge name='left'>
+          <strip size='234'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1hzel3014eglzd153k0xg1ciaa1o].[max:cumulative_total_deaths:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FBBA7F4D-8ADD-404D-B8B5-D65BA7C7FA5E}' />
+    </window>
+    <window class='worksheet' name='Test scatter_death_vac'>
+      <cards>
+        <edge name='left'>
+          <strip size='294'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='40'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{88130548-0FE0-4D41-86AD-C0579585B93D}' />
+    </window>
+    <window class='worksheet' name='Test fully_vac_compare'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{52AB4492-A572-4B4C-AAD6-414BEA9C6E45}' />
+    </window>
+    <window class='worksheet' name='Test full_vac_per_hun'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A56592FB-3458-4617-8094-1AC7B867F2FE}' />
+    </window>
+    <window class='worksheet' name='Test world_vac_distri_extra'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D5062095-34D9-4092-8596-75C3E510CF79}' />
+    </window>
+    <window class='dashboard' name='Overall Dashboard for the testing visulization '>
+      <viewpoints>
+        <viewpoint name='Test covid_death_map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Test full_vac_per_hun' />
+        <viewpoint name='Test fully_vac_compare' />
+        <viewpoint name='Test scatter_death_vac'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Test vac_world_map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Test world_vac_distri'>
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{09A0C8F0-48C9-47BF-81A5-59F97008BE1A}' />
+    </window>
+    <window class='worksheet' name='Test world_vac_distri'>
+      <cards>
+        <edge name='left'>
+          <strip size='294'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1v5c2ea1wrhvja1dwhthb1nnpiz1].[sum:total_vaccinations:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1v5c2ea1wrhvja1dwhthb1nnpiz1].[none:vaccine:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{8303B966-6968-42FB-B64F-645F8EAF6990}' />
+    </window>
+  </windows>
+  <_.fcp.ExplainData_AuthorControls.true...explain-data enabled-for-viewer='true' extreme-values-enabled-for-all='false'>
+    <explanation-types>
+      <explanation-type enabled='true' type='number-of-records' />
+      <explanation-type enabled='true' type='average-of-records' />
+      <explanation-type enabled='true' type='aggregated-dimensions' />
+      <explanation-type enabled='true' type='distribution-of-records' />
+      <explanation-type enabled='true' type='unvisualized-measures' />
+      <explanation-type enabled='true' type='extreme-values' />
+      <_.fcp.ExplainData_NullValueExplanation.true...explanation-type enabled='true' type='null-value' />
+      <explanation-type enabled='true' type='tvd-single-value' />
+      <explanation-type enabled='true' type='ad-single-value' />
+    </explanation-types>
+  </_.fcp.ExplainData_AuthorControls.true...explain-data>
+</workbook>
