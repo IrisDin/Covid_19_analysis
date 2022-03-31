@@ -21,3 +21,8 @@ However, our notebook embedded interactive visualizations but Github performs a 
 [Country_vaccinations.csv & Country_vaccinations_by_manufacturer.csv ](https://www.kaggle.com/gpreda/covid-world-vaccination-progress)
 
 [Worldometer_coronavirus_daily_data.csv](https://www.kaggle.com/josephassaker/covid19-global-dataset)
+
+# Other:
+We also create interactive web-page through shiny frame by using R.
+
+project credits & co-editor : Joyce chan Frank Lin Zaozao Li
